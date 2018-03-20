@@ -57,3 +57,6 @@ You can make sure that it's saved by running `docker images`.
 If you want to continue working from a particular checkpoint, you should run a new container from your
 saved image by executing `docker run -it -p 127.0.0.1:8080:8080 --name coursera-aml-2 coursera-aml-snap-1`.
 Notice that we incremented index in the container name, because we created a new container.
+
+# Running it using Google Cloud Platform
+Check out https://github.com/Cheukting/GCP-GPU-Jupyter for using Terraform to launch this docker app to GCP
