@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL maintainer="Zimovnov Andrey <zimovnov@gmail.com>"
+LABEL maintainer="original: Zimovnov Andrey <zimovnov@gmail.com>, this version: Cheuk Ho <cheukting.ho@gmail.com>"
 ARG DEBIAN_FRONTEND=noninteractive
 
 # install apt packages
@@ -22,3 +22,5 @@ RUN echo "c.NotebookApp.token = ''" >> /root/.jupyter/jupyter_notebook_config.py
 WORKDIR /root
 EXPOSE 8080
 CMD ["jupyter", "notebook", "--no-browser", "--allow-root"]
+
+RUN git clone https://github.com/Cheukting/intro-to-dl.git
