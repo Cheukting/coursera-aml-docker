@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM nvidia/cuda:8.0-cudnn5-runtime-ubuntu16.04
 LABEL maintainer="original: Zimovnov Andrey <zimovnov@gmail.com>, this version: Cheuk Ho <cheukting.ho@gmail.com>"
 ARG DEBIAN_FRONTEND=noninteractive
 
